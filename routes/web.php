@@ -1,0 +1,4 @@
+<?php
+use Illuminate\Support\Facades\Route;
+Route::get('/',function(){return redirect()->route('superheroes.index');});
+Route::resource('superheroes','SuperheroController');
